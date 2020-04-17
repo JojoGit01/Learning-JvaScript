@@ -1,0 +1,217 @@
+ Note learning Javascript
+
+ -- Ou ecrire le Javascript --
+    -> Dans l'element head ou body d'un fichier html
+    -> Dans un fichier avec le .js      
+        -> Pour pouvoir s'en servir  <script type="text/javascript" src="learningJS.js"></script>
+
+-- Syntaxe, indentation et commentaire --
+    -> Un ; à chaque fin d'instruction
+    // Commentiare mono-ligne
+    /* Commentaire multi-ligne */
+
+-- Présentation des variables en Javascript --
+    -> Voir function variables();
+
+-- Les types de valeurs des variables JavaScript -- 
+    -> Voir function typeVaraibles()    /////
+    -> typeof() : Permet de voir le type 
+    -> Tous les types de variable : 
+            Variable x : string
+            Variable y : number
+            Variable a : boolean
+            Variable n : object
+            Variable u : undefined
+            Variable nn :number
+
+-- Operation entre variables --
+    -> voir function operationVar()     /////
+
+-- La concatenation --
+    - Voir function concatenation()     /////
+
+-- Les conditions --
+    == : est égal a (en valeur)
+    === : est égal a (en valeur et en type)
+
+    -> Voir function condition()
+    -> Voir function condition1()
+
+-- Les opérateur logique -- 
+    -> Voir function operateurLogique()
+
+-- Simplification des conditions -- 
+-- Structures ternaires --
+    -> voir function structureTernaire()
+
+-- Le switch -- 
+    -> voir function switchLearn()
+-- Les boucles --
+    -> Bon !
+
+-- Les fonctions --
+    -> Bon !
+
+-- Objet en JS --
+    -> Voir function objet()
+
+-- Valeur primitives et objets natifs --
+    -> Voir function vMoN()
+    -> A savoir
+        -> variable.length : Longueur de la chaine 
+        -> variable.toUpperCase() : Mettre en majuscule
+    
+-- Creer des objets --
+    -> Voir function createObjet()
+    -> Voir function Identite(prenom, nom, age)
+    -> Voir function useIdentite()
+
+-- Les méthodes de l'objet String --
+    -> Voir function methodeString()
+
+-- Objet Number, propriétés et méthodes --
+-> A SAVOIR :
+    -> variable.toString(..)
+    -> variable.toFixed(..)
+    -> variable.toPrecision(..)
+    -> variable.toExponential(..)
+    -> variable.NumberMax ...
+
+    -> Number() : Convertir en nombre
+    -> parseInt(..) : Convertir en int 
+    -> parseFloat(..) : Convertir en float
+
+-- Objet Array et des tableaux -- 
+    -> Voir function arrayLearn()
+-- Methode objet Array Video 24/65--
+    -> Voir function arrayMethodLearn()
+
+-- Objet Date -- 
+    -> Voir function dateLearn()
+-- Methode Objet Date --
+    -> Voir function dateMethodLearn()
+
+-- Objet Maths --
+    -> voir function mathsLearn()
+
+-- La portée en JS --
+    - Locale 
+    - GLobale
+    - ...
+
+-- Fonction anonymes --
+    -> Voir function anonymes()
+    -> Voir ligne 400
+    - prompt() : Recupere ce que rentre l'utilisateur
+-- Fonction auto invoquées --
+    -- Voir ligne 408
+    -> Il faut 2 parenthese au debut et a la fin pour qu'elle s'auto invoque --
+    Exemple :
+    (function(x){
+        x = prompt("Entrez un nombre");
+        alert('Carre de ' + x + ' = ' + x*x);
+    })();
+
+-- Les closures en JS --
+    -> Voir function compteur()
+    -> Voir function closureLearn()
+
+-- DOM HTML --
+    DOM : Document Object Model
+        - C'est comme un noeud (Node)
+    - Déclencher des évenements 
+    Le DOM est une interface de programmation 
+    qui permet de manipuler le code html d'une page de facon dynamique en utilisant un langage de script, ici le JavaScript.
+    Il est construit dés le lancement d'une page web. Tous les élement d'une page web constitue un DOM.
+
+-- Acceder a des élements HTML en JS --
+    -> Voir function accederElementHtml()
+-- Modifier du contenu HTML en JS --
+    -> Voir function modifierElementHtml()
+-- Ajouter et inserer des element HTML en JS --
+    -> Voir function ajouterInsererElement()
+-- Modifier ou supprimer des élements HTML en JS --
+    -> Voir function modifierSupprimerElement()
+
+-- Naviguer dans le DOM --
+    -- Voir 37/65 Video
+    -> Voir function naviguerDOM()
+
+-- Les evenement en JS --
+    -> Voir function eventLearn()
+-- Methode addEventListener --
+    -> Voir function eventMethodeLearn()
+
+-- Propagation des evenements Video 40/65--
+    -> Voir addEventListener();
+    --> J'ai compris : 
+    -> profond -> profond -> racineexternet -> racine -> racine principale
+        -> addEventListener(..,..);          : Pour commencer de la racine au plus profond
+        -> addEventListener(..,.., true);    : Pour commencer du plus profond a la racine
+
+-- Objet Event --
+    -> Voir function objetEvent()
+    -- A SAVOIR
+        -> event.target
+        -> event.currentTarget
+        -> e.stopPropagation()
+        -> e.preventDefault()
+
+-- Le BOM et l'objet Window --
+--A SAVOIR 
+var fenetre = ''; 
+    -> fenetre = window.open(...)
+    -> fenetre.close()
+    -> fenetre.resizeTo(width, height)
+        -> .open()
+        -> .close()
+        -> .resizeTO()
+
+-- Objet Screen --
+    -> Optimisation ecran
+    -> A savoir :
+        -> screen.height            // Hauteur
+        -> screen.availHeight       // Hauteur Disponible
+        -> screen.pixelDepth        // Resolution
+
+-- Objet Navigator --
+-- A SAVOIR :
+    -> navigator.language           // Langue
+    -> navigator.appName            // Naviguateur
+    -> navigator.appVersion         // Version
+    -> navigator.product            // Moteur
+    -> navigator.cookieEnabled      // CookieA
+
+    -> navigator.geolocation        // Location
+        -> getCurrentPostion(coordonnes);   ...
+            ->  .latitude;          // Lattitude
+            ->  .longitude;         // Longitude
+-- Objet Location --
+-- Objet History --
+
+-- Expression régulières --
+-- Recherches et emplacements avec des expression régulières --
+-- Quantifieurs et options --
+
+-- Les classes de caractères et les métacaractères --
+
+-- Rappels sur les formulaires HTML --
+-- Validation HTML des formulaires et limitations --
+-- Validation JavaScript de formulaires HTML --
+
+-- Element CANVAS --
+-- Dessiner des  rectangles --
+-- Dessiner des lignes dans le canvas -- 
+-- Dessiner des arcs de cercle dans le canvas --
+-- Créer des dégradés dans le canvas --
+-- Insérer du texte et des images dans le canvas --
+-- Rotations et translations dans le canvas --
+-- Gestion du délai d'exécution en JavaScript --
+-- Les cookies en JavaScript --
+-- Gestion des erreurs en JavaScript --
+
+-- Le mode strict en JavaScript --
+    -> Important 
+    --  'use strict';
+-- Conclusion --
+
